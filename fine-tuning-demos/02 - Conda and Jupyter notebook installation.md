@@ -12,7 +12,7 @@ The demo in this Confluence page is w/o GPU.
 
 conda installation
 
-```ubuntu
+```shell
 sudo apt-get update -y
 sudo apt-get install -y build-essential
 sudo apt-get install -y curl git wget
