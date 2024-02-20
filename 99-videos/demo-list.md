@@ -20,7 +20,21 @@ https://drive.google.com/file/d/1hqu9LUZmJO4dRCREMrS38vJKLFLaE3ZM/view?usp=drive
 
 ## Demo2 - vgpu-sd
 
+demo2-sd-installation.mp4
 
+https://drive.google.com/file/d/1LZdknghthHaDawQXmUJ_HQsx2f1ixCvC/view?usp=drive_link
+
+
+
+demo2-vGPU-driver-installation.mp4
+
+https://drive.google.com/file/d/1GBgGGxry0Fn31608hly04sySC3EG2vIk/view?usp=drive_link
+
+
+
+vGPU-license-application.mp4
+
+https://drive.google.com/file/d/1iTYIfm_bcoANCjn9s5t-V-8VxHM7Suj0/view?usp=drive_link
 
 
 
