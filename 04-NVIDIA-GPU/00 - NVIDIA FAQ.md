@@ -13,12 +13,17 @@ Q1 of fiscal 2024,
 https://s201.q4cdn.com/141608511/files/doc_presentations/2023/06/nvda-f1q24-investor-presentation-final.pdf
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-22_9-46-34.png)
+![image-2023-6-22_9-46-34](https://github.com/router-gao/ai-demos/assets/144886373/6d25d95e-6415-4bd7-bd14-c255071552b3)
+
 
 (from its FY2023 report)
 
 ### NVIDIA Expanding Accelerated Computing Ecosystem
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-22_9-49-45.png)
+
+![image-2023-6-22_9-49-45](https://github.com/router-gao/ai-demos/assets/144886373/741759a2-11a9-4f4d-bea9-087928782b61)
+
 
 (from its fiscal 2024 Q1 report)
 
@@ -28,6 +33,8 @@ https://www.nvidia.com/en-us/data-center/
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-22_10-56-6.png)
 
+![image-2023-6-22_10-56-6](https://github.com/router-gao/ai-demos/assets/144886373/66291ed8-54bd-48bd-b286-1db53f2d8fa0)
+
 **NVIDIA Data Center GPU Dirver Document （Release Notes，User Guide， Quick Start Guide, etc）**
 
 https://docs.nvidia.com/datacenter/tesla/index.html#nvidia-driver-documentation
@@ -35,6 +42,9 @@ https://docs.nvidia.com/datacenter/tesla/index.html#nvidia-driver-documentation
 The following GPUs are supported for device passthrough for virtualization
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-26_6-35-13.png)
+
+![image-2023-6-26_6-35-13](https://github.com/router-gao/ai-demos/assets/144886373/45c6ff2e-c53a-42e2-9162-5a183e6635eb)
+
 
 ### NVIDIA Ecosystem
 
@@ -53,6 +63,8 @@ https://docs.nvidia.com/
 https://docs.nvidia.com/datacenter/cloud-native/#overview
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-22_21-50-12.png)
+![image-2023-6-22_21-50-12](https://github.com/router-gao/ai-demos/assets/144886373/93436891-c062-4e2a-ace2-7f6b8774330c)
+
 
 ### NVIDIA NGC and NGC Catalog
 
@@ -109,3 +121,7 @@ https://developer.nvidia.com/blog/tag/google/
 ### VMware GPU Compatibility Guide
 
 ![img](./00 - NVIDIA FAQ - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-26_6-29-50.png)
+
+![image-2023-6-26_6-29-50](https://github.com/router-gao/ai-demos/assets/144886373/ab114b30-c2f4-4f61-a0c3-2ea33f6684fc)
+
+
