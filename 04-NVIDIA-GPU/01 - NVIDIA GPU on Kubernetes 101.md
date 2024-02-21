@@ -9,6 +9,7 @@ https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-ca
 
 ### How to consume a GPU on Kubernetes?
 https://github.com/NVIDIA/gpu-operator
+
 https://www.youtube.com/watch?v=KER0dbfmAqQ
 
 [How_to_easily_use_GPUs_with_Kubernetes.pdf](https://github.com/router-gao/ai-demos/files/14359723/How_to_easily_use_GPUs_with_Kubernetes.pdf)
