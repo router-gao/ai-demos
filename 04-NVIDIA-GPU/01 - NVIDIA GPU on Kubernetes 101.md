@@ -5,6 +5,8 @@ The simple answer is Pass through GPU and vGPU (MIG, Multi-Instance GPU).
 https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-can-they-be-used-together
 
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-25_0-28-3.png)
+![image-2023-6-25_0-28-3](https://github.com/router-gao/ai-demos/assets/144886373/e718b7bd-ff80-41c1-8d03-17616c275a50)
+
 
 ### How to consume a GPU on Kubernetes?
 
@@ -15,12 +17,18 @@ https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-ca
 - Monitoring is configed, if it's required
 
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-25_0-33-52.png)
+![image-2023-6-25_0-33-52](https://github.com/router-gao/ai-demos/assets/144886373/8ab3536d-c8ac-4eb8-ba2d-2b0b7e17a467)
+
+
 
 ### Linux OS that can be used to consume NVIDIA GPU in Kubernetes (container toolkit)
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-24_16-39-28.png)
+![image-2023-6-24_16-39-28](https://github.com/router-gao/ai-demos/assets/144886373/f7073165-681c-4436-af23-d7ff3071773b)
+
+
 
 ### What is GPU driver?
 
@@ -31,6 +39,9 @@ https://docs.nvidia.com/datacenter/tesla/index.html#nvidia-driver-documentation
 The following GPUs are supported for device passthrough for virtualization (GPU Data Center driver 525.105.17, 2023-July)
 
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-26_6-7-26.png)
+
+![image-2023-6-26_6-7-26](https://github.com/router-gao/ai-demos/assets/144886373/425e458f-9e6b-47d5-868f-91028aba7590)
+
 
 **Most of the time, user does not need to download and install the GPU driver!**
 
@@ -59,7 +70,13 @@ Tips
 
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-23_17-53-10.png)
 
+![image-2023-6-23_17-53-10](https://github.com/router-gao/ai-demos/assets/144886373/2194ba15-40f0-4c71-a2b3-d6a10d7414ee)
+
+
 ![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-23_17-52-39.png)
+![image-2023-6-23_17-52-39](https://github.com/router-gao/ai-demos/assets/144886373/66f1a913-7457-413c-8880-be556ce6538c)
+
+
 
 Steps to install GPU driver
 
@@ -197,9 +214,9 @@ NVIDIA Webinar of gpu-operator (videos and slides)
 
 [https://info.nvidia.com/how-to-use-gpus-on-kubernetes-webinar.html?ondemandrgt=yes#](https://info.nvidia.com/how-to-use-gpus-on-kubernetes-webinar.html?ondemandrgt=yes)
 
-[![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/1)](https://confluence.eng.vmware.com/download/attachments/1730127765/How_to_easily_use_GPUs_with_Kubernetes.pdf?version=1&modificationDate=1687626881000&api=v2) PDF PDF
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-24_15-39-47.png)
+![image-2023-6-24_15-39-47](https://github.com/router-gao/ai-demos/assets/144886373/fa1d063c-4eb5-4230-8107-0817e2a60e64)
+
 
 During my Demo deployment, I found some pods are very important. There are plenty of document and videos to talk about GPU operator.
 
@@ -494,7 +511,9 @@ https://github.com/NVIDIA/nvidia-container-toolkit
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/overview.html
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-24_16-35-34.png)
+![image-2023-6-24_16-35-34](https://github.com/router-gao/ai-demos/assets/144886373/d21fc8e6-2c4c-48bf-af57-f50a3cfb52d0)
+
+
 
 ### How to monitor NVIDIA GPU?
 
@@ -506,7 +525,9 @@ The GPU Prometheus/Grafana monitoring Demo is here. [04 - NVIDIA monitoring in P
 
 
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-24_16-6-28.png)
+![image-2023-6-24_16-6-28](https://github.com/router-gao/ai-demos/assets/144886373/056508b0-29f6-4340-af4f-c63ec4ba24e8)
+
+
 
 This is the official document of NVIDIA DCGM
 
