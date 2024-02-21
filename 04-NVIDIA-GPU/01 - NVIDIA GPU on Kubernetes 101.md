@@ -4,11 +4,14 @@ The simple answer is Pass through GPU and vGPU (MIG, Multi-Instance GPU).
 
 https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-can-they-be-used-together
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-25_0-28-3.png)
 ![image-2023-6-25_0-28-3](https://github.com/router-gao/ai-demos/assets/144886373/e718b7bd-ff80-41c1-8d03-17616c275a50)
 
 
 ### How to consume a GPU on Kubernetes?
+https://www.youtube.com/watch?v=KER0dbfmAqQ
+
+[How_to_easily_use_GPUs_with_Kubernetes.pdf](https://github.com/router-gao/ai-demos/files/14359723/How_to_easily_use_GPUs_with_Kubernetes.pdf)
+
 
 - Hardware ready - GPU
 - OS ready - ESXi and OS (currently Ubnutu is more user friendly)
@@ -16,7 +19,6 @@ https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-ca
 - Kubernetes is up and running, GPU Opertator is successfully deployed on the Kubernetes cluster
 - Monitoring is configed, if it's required
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-25_0-33-52.png)
 ![image-2023-6-25_0-33-52](https://github.com/router-gao/ai-demos/assets/144886373/8ab3536d-c8ac-4eb8-ba2d-2b0b7e17a467)
 
 
@@ -25,7 +27,6 @@ https://core.vmware.com/blog/virtual-gpus-and-passthrough-gpus-vmware-vsphere-ca
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
-![img](./01 - NVIDIA GPU on Kubernetes 101 - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-24_16-39-28.png)
 ![image-2023-6-24_16-39-28](https://github.com/router-gao/ai-demos/assets/144886373/f7073165-681c-4436-af23-d7ff3071773b)
 
 
