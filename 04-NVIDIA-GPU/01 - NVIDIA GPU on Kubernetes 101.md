@@ -206,7 +206,7 @@ During my Demo deployment, I found some pods are very important. There are plent
 Some common functions of the pods
 
 - pods with 'validator', they are validate the related function is working correctly or not. They are very helpful on trouble shooting. For example 'kubectl logs nvidia-operator-validator-t7b69 -n gpu-operator' as below
-- dcgm-exporter pod is in charge of Prometheus/Granfana monitoring of the GPU resources. The GPU Prometheus/Grafana monitoring Demo is here. [04 - NVIDIA monitoring in Prometheus/Grafana](https://confluence.eng.vmware.com/pages/viewpage.action?pageId=1726635313)
+- dcgm-exporter pod is in charge of Prometheus/Granfana monitoring of the GPU resources. The GPU Prometheus/Grafana monitoring Demo is here. [04 - NVIDIA monitoring in Prometheus/Grafana](https://github.com/router-gao/ai-demos/blob/main/04-NVIDIA-GPU/04%20-%20NVIDIA%20monitoring%20in%20Prometheus%20and%20Grafana.md)
 - container-tooltik is helping deploy the toolkit automatically
 - feature discovery github https://gitlab.com/nvidia/kubernetes/gpu-feature-discovery
 
@@ -502,7 +502,7 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/overvie
 
 It's included in the Kubernetes GPU Operator and it's deployed automatically. Without Kubernetes GPU Operator, users have to install it manually, for example in a Docker standalone environment.
 
-The GPU Prometheus/Grafana monitoring Demo is here. [04 - NVIDIA monitoring in Prometheus/Grafana](https://confluence.eng.vmware.com/pages/viewpage.action?pageId=1726635313)
+The GPU Prometheus/Grafana monitoring Demo is here. [04 - NVIDIA monitoring in Prometheus/Grafana](https://github.com/router-gao/ai-demos/blob/main/04-NVIDIA-GPU/04%20-%20NVIDIA%20monitoring%20in%20Prometheus%20and%20Grafana.md)
 
 
 
