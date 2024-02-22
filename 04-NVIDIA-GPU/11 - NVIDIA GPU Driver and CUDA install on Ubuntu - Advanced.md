@@ -40,9 +40,11 @@ Install gcc and make first.
 
 **install gcc and make**
 
-```
+```shell
 apt-get install gcc make -y
 ```
+
+
 
 ## Option - 1, install GPU driver from Ubuntu GUI
 
@@ -68,33 +70,109 @@ Steps to install GPU driver
 
 **apt-get update**
 
-```
+```shell
 apt-get update -y
 ```
 
 **get the recommanded driver version, line 8 with 'recommended' tag**
 
 ```
-root``@ubuntu``-``2204``-server:/home/ubuntu#``root``@ubuntu``-``2204``-server:/home/ubuntu# ubuntu-drivers devices``== /sys/devices/pci0000:``02``/``0000``:``02``:``03.0` `==``modalias : pci:v000010DEd00001EB8sv000010DEsd000012A2bc03sc02i00``vendor  : NVIDIA Corporation``model  : TU104GL [Tesla T4]``driver  : nvidia-driver-``515``-server - distro non-free``driver  : nvidia-driver-``530` `- distro non-free recommended``driver  : nvidia-driver-``525` `- distro non-free``driver  : nvidia-driver-``525``-server - distro non-free``driver  : nvidia-driver-``515` `- distro non-free``driver  : nvidia-driver-``418``-server - distro non-free``driver  : nvidia-driver-``510` `- distro non-free``driver  : nvidia-driver-``470` `- distro non-free``driver  : nvidia-driver-``450``-server - distro non-free``driver  : nvidia-driver-``470``-server - distro non-free``driver  : xserver-xorg-video-nouveau - distro free builtin` `== /sys/devices/pci0000:``00``/``0000``:``00``:0f.``0` `==``modalias : pci:v000015ADd00000405sv000015ADsd00000405bc03sc00i00``vendor  : VMware``model  : SVGA II Adapter``manual_install: True``driver  : open-vm-tools-desktop - distro free` `root``@ubuntu``-``2204``-server:/home/ubuntu#
+root@ubuntu-2204-server:/home/ubuntu#
+root@ubuntu-2204-server:/home/ubuntu# ubuntu-drivers devices
+== /sys/devices/pci0000:02/0000:02:03.0 ==
+modalias : pci:v000010DEd00001EB8sv000010DEsd000012A2bc03sc02i00
+vendor   : NVIDIA Corporation
+model    : TU104GL [Tesla T4]
+driver   : nvidia-driver-515-server - distro non-free
+driver   : nvidia-driver-530 - distro non-free recommended
+driver   : nvidia-driver-525 - distro non-free
+driver   : nvidia-driver-525-server - distro non-free
+driver   : nvidia-driver-515 - distro non-free
+driver   : nvidia-driver-418-server - distro non-free
+driver   : nvidia-driver-510 - distro non-free
+driver   : nvidia-driver-470 - distro non-free
+driver   : nvidia-driver-450-server - distro non-free
+driver   : nvidia-driver-470-server - distro non-free
+driver   : xserver-xorg-video-nouveau - distro free builtin
+ 
+== /sys/devices/pci0000:00/0000:00:0f.0 ==
+modalias : pci:v000015ADd00000405sv000015ADsd00000405bc03sc00i00
+vendor   : VMware
+model    : SVGA II Adapter
+manual_install: True
+driver   : open-vm-tools-desktop - distro free
+ 
+root@ubuntu-2204-server:/home/ubuntu#
 ```
 
 **install the recommanded GPU driver**
 
-```
-root``@ubuntu``-``2204``-server:/home/ubuntu# apt-get install nvidia-driver-``530` `-y``Reading ``package` `lists... Done``Building dependency tree... Done``..``Processing triggers ``for` `initramfs-tools (``0``.140ubuntu13.``1``) ...``update-initramfs: Generating /boot/initrd.img-``5.15``.``0``-``73``-generic``Processing triggers ``for` `libgdk-pixbuf-``2.0``-``0``:amd64 (``2.42``.``8``+dfsg-1ubuntu0.``2``) ...``Processing triggers ``for` `libc-bin (``2.35``-0ubuntu3.``1``) ...``Scanning processes...``Scanning linux images...` `Running kernel seems to be up-to-date.` `No services need to be restarted.` `No containers need to be restarted.` `No user sessions are running outdated binaries.` `No VM guests are running outdated hypervisor (qemu) binaries on ``this` `host.``root``@ubuntu``-``2204``-server:/home/ubuntu#``root``@ubuntu``-``2204``-server:/home/ubuntu# reboot
+```shell
+root@ubuntu-2204-server:/home/ubuntu# apt-get install nvidia-driver-530 -y
+Reading package lists... Done
+Building dependency tree... Done
+..
+Processing triggers for initramfs-tools (0.140ubuntu13.1) ...
+update-initramfs: Generating /boot/initrd.img-5.15.0-73-generic
+Processing triggers for libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.2) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Scanning processes...
+Scanning linux images...
+ 
+Running kernel seems to be up-to-date.
+ 
+No services need to be restarted.
+ 
+No containers need to be restarted.
+ 
+No user sessions are running outdated binaries.
+ 
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ubuntu-2204-server:/home/ubuntu#
+root@ubuntu-2204-server:/home/ubuntu# reboot
 ```
 
 **reboot and try command nvidia-smi**
 
-```
-root``@ubuntu``-``2204``-server:/home/ubuntu# nvidia-smi``Thu Jun ``22` `08``:``24``:``53` `2023``+---------------------------------------------------------------------------------------+``| NVIDIA-SMI ``530.41``.``03`       `Driver Version: ``530.41``.``03`  `CUDA Version: ``12.1`   `|``|-----------------------------------------+----------------------+----------------------+``| GPU Name         Persistence-M| Bus-Id    Disp.A | Volatile Uncorr. ECC |``| Fan Temp Perf      Pwr:Usage/Cap|     Memory-Usage | GPU-Util Compute M. |``|                     |           |        MIG M. |``|=========================================+======================+======================|``|  ``0` `Tesla T4            Off| ``00000000``:``02``:``03.0` `Off |          ``0` `|``| N/A  45C  P8        11W / 70W|   2MiB / 15360MiB |   ``0``%   Default |``|                     |           |         N/A |``+-----------------------------------------+----------------------+----------------------+` `+---------------------------------------------------------------------------------------+``| Processes:                                      |``| GPU  GI  CI    PID  Type  Process name              GPU Memory |``|    ID  ID                               Usage   |``|=======================================================================================|``| No running processes found                              |``+---------------------------------------------------------------------------------------+``root``@ubuntu``-``2204``-server:/home/ubuntu#
+```shell
+root@ubuntu-2204-server:/home/ubuntu# nvidia-smi
+Thu Jun 22 08:24:53 2023
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.41.03              Driver Version: 530.41.03    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla T4                        Off| 00000000:02:03.0 Off |                    0 |
+| N/A   45C    P8               11W /  70W|      2MiB / 15360MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+ 
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+root@ubuntu-2204-server:/home/ubuntu#
 ```
 
 **lsmod**
 
+```shell
+root@ubuntu-2004-server:/home/ubuntu# lsmod | grep -i nvidia
+nvidia_uvm           1265664  2
+nvidia_drm             65536  2
+nvidia_modeset       1273856  2 nvidia_drm
+nvidia              55713792  505 nvidia_uvm,nvidia_modeset
+drm_kms_helper        184320  2 vmwgfx,nvidia_drm
+drm                   495616  10 vmwgfx,drm_kms_helper,nvidia,nvidia_drm,ttm
+root@ubuntu-2004-server:/home/ubuntu#
 ```
-root``@ubuntu``-``2004``-server:/home/ubuntu# lsmod | grep -i nvidia``nvidia_uvm      ``1265664` `2``nvidia_drm       ``65536` `2``nvidia_modeset    ``1273856` `2` `nvidia_drm``nvidia       ``55713792` `505` `nvidia_uvm,nvidia_modeset``drm_kms_helper    ``184320` `2` `vmwgfx,nvidia_drm``drm          ``495616` `10` `vmwgfx,drm_kms_helper,nvidia,nvidia_drm,ttm``root``@ubuntu``-``2004``-server:/home/ubuntu#
-```
+
+
 
 ## Option - 3, install CUDA and it will install GPU driver by selection
 
@@ -110,8 +188,19 @@ Step 1, blacklist nouveau and **reboot** the VM
 
 **balcklist nouveau**
 
-```
-echo ``''` `> /etc/modprobe.d/nvidia-installer-disable-nouveau.conf``cat >> /etc/modprobe.d/nvidia-installer-disable-nouveau.conf <<-EOF``blacklist nouveau``options nouveau modeset=``0``EOF` `echo ``''` `> /etc/modprobe.d/nvidia.conf``cat >> /etc/modprobe.d/nvidia.conf <<-EOF``options nvidia NVreg_OpenRmEnableUnsupportedGpus=``1``EOF` `update-initramfs -u
+```shell
+echo '' > /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+cat >> /etc/modprobe.d/nvidia-installer-disable-nouveau.conf <<-EOF
+blacklist nouveau
+options nouveau modeset=0
+EOF
+ 
+echo '' > /etc/modprobe.d/nvidia.conf
+cat >> /etc/modprobe.d/nvidia.conf <<-EOF
+options nvidia NVreg_OpenRmEnableUnsupportedGpus=1
+EOF
+ 
+update-initramfs -u
 ```
 
 
@@ -122,10 +211,11 @@ https://developer.nvidia.com/cuda-downloads
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-18-28.png)
 
-**run the cuda installer**
+**run the CUDA installer**
 
-```
-wget https:``//developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run``sudo sh cuda_12.``1``.1_530.``30``.02_linux.run -m=kernel-open
+```shell
+wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run
+sudo sh cuda_12.1.1_530.30.02_linux.run -m=kernel-open
 ```
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-8.png) ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-45.png)
@@ -134,8 +224,35 @@ monitor the logs
 
 **monitor the logs**
 
-```
-root``@ubuntu``-vm:/home/ubuntu# cd /var/log``root``@ubuntu``-vm:/var/log#``root``@ubuntu``-vm:/var/log# ll | grep cuda``-rw-r--r--  ``1` `root   root        ``570` `Jun ``27` `08``:``27` `cuda-installer.log``-rw-r--r--  ``1` `root   root      ``1006657` `Jun ``26` `03``:``16` `cuda-uninstaller.log``root``@ubuntu``-vm:/var/log#``root``@ubuntu``-vm:/var/log# tail -f cuda-installer.log``[INFO]: Installing: CUDA Command Line Tools ``12.1``[INFO]: Installing: cuda-cupti``[INFO]: Installing: cuda-gdb``[INFO]: Installing: nvdisasm``[INFO]: Installing: nvprof``[INFO]: Installing: nvtx``[INFO]: Installing: compute-sanitizer``...` `root``@ubuntu``-vm:/var/log# ll | grep -i cuda``-rw-r--r--  ``1` `root   root        ``287` `Jun ``27` `08``:``25` `cuda-installer.log``-rw-r--r--  ``1` `root   root      ``1006657` `Jun ``26` `03``:``16` `cuda-uninstaller.log``root``@ubuntu``-vm:/var/log#``root``@ubuntu``-vm:/var/log#``root``@ubuntu``-vm:/var/log# tail -f cuda-installer.log``[INFO]: Installing: cuda-cuobjdump``[INFO]: Installing: cuda-cuxxfilt``[INFO]: Installing: cuda-nvcc``[INFO]: Installing: cuda-nvprune``[INFO]: Installing: libnvvm-samples``...
+```shell
+root@ubuntu-vm:/home/ubuntu# cd /var/log
+root@ubuntu-vm:/var/log#
+root@ubuntu-vm:/var/log# ll | grep cuda
+-rw-r--r--   1 root      root                570 Jun 27 08:27 cuda-installer.log
+-rw-r--r--   1 root      root            1006657 Jun 26 03:16 cuda-uninstaller.log
+root@ubuntu-vm:/var/log#
+root@ubuntu-vm:/var/log# tail -f cuda-installer.log
+[INFO]: Installing: CUDA Command Line Tools 12.1
+[INFO]: Installing: cuda-cupti
+[INFO]: Installing: cuda-gdb
+[INFO]: Installing: nvdisasm
+[INFO]: Installing: nvprof
+[INFO]: Installing: nvtx
+[INFO]: Installing: compute-sanitizer
+...
+ 
+root@ubuntu-vm:/var/log# ll | grep -i cuda
+-rw-r--r--   1 root      root                287 Jun 27 08:25 cuda-installer.log
+-rw-r--r--   1 root      root            1006657 Jun 26 03:16 cuda-uninstaller.log
+root@ubuntu-vm:/var/log#
+root@ubuntu-vm:/var/log#
+root@ubuntu-vm:/var/log# tail -f cuda-installer.log
+[INFO]: Installing: cuda-cuobjdump
+[INFO]: Installing: cuda-cuxxfilt
+[INFO]: Installing: cuda-nvcc
+[INFO]: Installing: cuda-nvprune
+[INFO]: Installing: libnvvm-samples
+...
 ```
 
 # Uninstall
@@ -152,6 +269,6 @@ No need for explanation.
 
 **nvidia-uninstall**
 
-```
+```shell
 nvidia-uninstall
 ```
