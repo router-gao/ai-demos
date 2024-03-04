@@ -68,17 +68,21 @@ https://drive.google.com/file/d/1rmld6ai6tCeJcyM0Rh82MBTkZmQCkZ39/view?usp=drive
 
 ## Demo5 - colab-fine-tuning
 
+demo5-colab-fine-tuning-1.mp4
+
+https://drive.google.com/open?id=1JZdPSwh4zvk4yGqRMfTfpGOcyOmhqAox&usp=drive_copy
 
 
+demo5-google-vertexAI.mp4
 
-
-
+https://drive.google.com/open?id=1o1i9AF0Gj7HU7OiQxyB2JeVcUK9ooWDd&usp=drive_copy
 
 
 
 ## Demo6-kubeflow
 
 1.1-Install Kubeflow on Nimbus - RAW Demo - No Audio
+
 https://drive.google.com/file/d/1jdcq86m4-NyIcuCRMDC2ie6yUNtMS6k8/view?usp=sharing
 
 
@@ -92,6 +96,21 @@ https://drive.google.com/file/d/1jdcq86m4-NyIcuCRMDC2ie6yUNtMS6k8/view?usp=shari
 
 
 ## Demo8 - JupyterNotebook
+
+00-gpu-cluster-bootstrapping.mp4
+
+https://drive.google.com/open?id=1CxVNynGMMYgz0pig0o2hrbkY0geSSYaf&usp=drive_copy
+
+
+01-jupyterhub-deployment.mp4
+
+https://drive.google.com/open?id=1hFrguhNfjSDKqQQBxKU0aEsq6qLRhOMk&usp=drive_copy
+
+
+02-jupyterhub-ui.mp4
+
+https://drive.google.com/open?id=1txubJo1vk9PycG-c6TSoQQ7K5T0dMKNO&usp=drive_copy
+
 
 
 
