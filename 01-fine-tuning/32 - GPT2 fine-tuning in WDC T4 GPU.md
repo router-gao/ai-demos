@@ -1,27 +1,27 @@
-The demo is made as a fine-tuning foundation.
+**The demo is made as a fine-tuning foundation.**
 
-To make the demo running fast and consume less resource, the find-tuning args and process are simplified purposely.
+**To make the demo running fast and consume less resource, the find-tuning args and process are simplified purposely.**
 
-Environment
-Ubuntu 22.04 LTS desktop
+## Environment
 
-16 vGPU and 32G RAM, 500G thin hard disk.
+- Ubuntu 22.04 LTS desktop
+- 16 vGPU and 32G RAM, 500G thin hard disk.
+- T4 GPU is passthrough. NVIDIA-SMI 535.86.05              Driver Version: 535.86.05    CUDA Version: 12.2  
 
-T4 GPU is passthrough. NVIDIA-SMI 535.86.05              Driver Version: 535.86.05    CUDA Version: 12.2  
+- Model is GPT2 (another name is gpt2-tiny), huggingface format (HF).
 
-Model is GPT2 (another name is gpt2-tiny), huggingface format (HF).
+- Dataset is huggingface ag_news.
 
-Dataset is huggingface ag_news.
-
-wandb statistics graphs
-
+- wandb statistics graphs
 
 
 
 
+## The fine-tuning python script
 
-The fine-tuning python script
 GPT2 fine-tuning script
+
+```python
 from datasets import load_dataset
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments
  
@@ -75,10 +75,15 @@ results = trainer.evaluate()
  
 print(results)
    
+```
 
+ 
 
-Validating
-validating
+## Validating
+
+validating python script
+
+```python
 from datasets import load_dataset
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, pipeline
  
@@ -101,9 +106,12 @@ for text in texts[:10]:  # Testing on first 10 samples, adjust as needed
     generated_text = text_generator(input_text, max_length=150, do_sample=True, top_k=50)
     print(f"Input: {input_text}")
     print(f"Generated: {generated_text[0]['generated_text']}\n")
+```
 
+ 
 
-Lessons Learned
+## Lessons Learned
+
 ChatGPT4 is more sharper than Claude2 in assisting fine-tuning
 Prompting 'simplify the script' is better than 'fix the issue' or 'solve the problem'
 training_args plays the magic

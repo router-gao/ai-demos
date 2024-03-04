@@ -5,13 +5,14 @@
 
 ## Environment
 
-Ubuntu 22.04 LTS desktop
+- Ubuntu 22.04 LTS desktop
 
-16 vGPU and 32G RAM, 500G thin hard disk.
+- 16 vGPU and 32G RAM, 500G thin hard disk.
 
-T4 GPU is passthrough. NVIDIA-SMI 535.86.05              Driver Version: 535.86.05    CUDA Version: 12.2  
+- T4 GPU is passthrough. NVIDIA-SMI 535.86.05              Driver Version: 535.86.05    CUDA Version: 12.2  
 
-Model is ''bert-base-cased' and 'bert-base-uncased', huggingface format (HF).
+- Model is ''bert-base-cased' and 'bert-base-uncased', huggingface format (HF).
+
 
 Dataset is huggingface glue/cola
 
