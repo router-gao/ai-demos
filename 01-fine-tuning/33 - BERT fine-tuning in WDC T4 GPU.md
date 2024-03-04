@@ -74,6 +74,10 @@ print(result)
 trainer.save_model("./fine_tuned_bert_cased")
 ```
 
+![image-2023-9-20_23-24-17](https://github.com/router-gao/ai-demos/assets/144886373/8773c0d1-ae4b-4291-83c2-b4d197f38193)
+
+![image-2023-9-20_23-25-27](https://github.com/router-gao/ai-demos/assets/144886373/072aca62-0ebb-4e74-ab75-a1d11c6ac23f)
+
  
 
 The validation script is as below. There are 5 senteces, and some words are start with capital letter to confuse the model.
