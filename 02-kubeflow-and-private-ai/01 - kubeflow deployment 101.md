@@ -11,6 +11,7 @@ Packaged Distributions of Kubeflow. On 2023-Oct, the active distributions are as
 
 VMware solution is TKGS based. https://vmware.github.io/vSphere-machine-learning-extension/
 
+![image-2023-10-8_16-58-50](https://github.com/router-gao/ai-demos/assets/144886373/b1ff79c1-e3c2-427d-a362-8a093b6f2566)
 
 
 Manifest based deployment (Raw Kubeflow Manifests)
