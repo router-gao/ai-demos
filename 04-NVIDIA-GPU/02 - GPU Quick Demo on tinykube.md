@@ -14,14 +14,6 @@ To make the process as simple as possible, there are some optimizations.
 
 - tinykube 1.25 rpm package
 
-  That's the link for tinykube rpm v1.25.7 (the latest one in June, 2023)
-
-  https://gitlab.eng.vmware.com/core-build/tinykube-rpm/-/blob/main/RPMS/x86_64/tinykube-v1.25.7+tinykube.2-3.x86_64.rpm
-
-  All tinykube RPMs could be found here.
-
-  https://gitlab.eng.vmware.com/core-build/tinykube-rpm/-/tree/main/RPMS/x86_64
-
 - Internet Connection
 
 - VNC client (optional)
@@ -39,16 +31,20 @@ To make the process as simple as possible, there are some optimizations.
 ## install Ubuntu 22.04 desktop
 
 In case you need VNC login, you can follow the steps below
+![image-2023-6-6_17-55-26](https://github.com/router-gao/ai-demos/assets/144886373/427cf79d-4005-490d-a0a7-221e34b83d38)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-55-26.png) ![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-56-8.png)
+
+![image-2023-6-6_17-56-8](https://github.com/router-gao/ai-demos/assets/144886373/7a899a9e-b1f4-4e7d-920c-f920eb0d31b4)
+
+
 
 ## install GPU passthrough (if it's ESXi VM based Ubuntu)
 
 Add PCI Passthrough device
+![image-2023-6-8_10-11-7](https://github.com/router-gao/ai-demos/assets/144886373/1b1e4461-cfff-4d80-8426-e6d56d061036)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-11-7.png)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_17-14-21.png)
+![image-2023-6-8_17-14-21](https://github.com/router-gao/ai-demos/assets/144886373/0a79cff4-1b52-4805-bb71-b5be620ecfec)
 
 ## install Nvidia driver
 
@@ -56,13 +52,23 @@ Select Software & Updates - Additional Drivers - Select proper drivers. Most of 
 
 Click 'Apply Changes', and system rebooting is required after driver is successfully installed.
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-17-50.png) ![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-19-24.png) 
 
+![image-2023-6-8_10-17-50](https://github.com/router-gao/ai-demos/assets/144886373/a93a3d12-910b-4bce-baf7-762e9af205f8)
+
+
+![image-2023-6-8_10-19-24](https://github.com/router-gao/ai-demos/assets/144886373/f5d72d9d-e279-4510-aef3-d4e749036410)
 
 
 After rebooting, check the status by command 'nvidia-smi', and Nvidia App will be installed automatically.
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_20-16-31.png)![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-53-28.png) ![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-54-10.png)
+![image-2023-6-6_20-16-31](https://github.com/router-gao/ai-demos/assets/144886373/a3b0f3ee-eeb0-4516-a29f-e9fae7c94d85)
+
+
+![image-2023-6-6_17-53-28](https://github.com/router-gao/ai-demos/assets/144886373/2b0111b1-a42c-48a0-bcdf-ab6615021584)
+
+
+![image-2023-6-6_17-54-10](https://github.com/router-gao/ai-demos/assets/144886373/be6b18c6-38cd-47dd-a78f-b35fc1e98fdf)
+
 
 ## install tinykube
 
@@ -242,7 +248,9 @@ root@ubuntu-vm:~#
 
 It can analyze car, person, bicycle, and card model/brand/color.
 
-# ![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-57-23.png)
+
+![image-2023-6-8_10-57-23](https://github.com/router-gao/ai-demos/assets/144886373/bd262173-4bad-4b5a-aeb6-9726b4a71537)
+
 
 # Trouble shooting
 
@@ -256,15 +264,17 @@ To upgrade from Ubuntu 20.04 to 22.04, steps are as below.
 
 Select the grey/white color ICON 'Software Updater' (not Software & Updates), and it will do the upgrade job automatically.
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-9_9-59-11.png)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-9_10-1-44.png)
-
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-9_10-2-6.png)
-
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-9_10-2-49.png)
+![image-2023-6-9_9-59-11](https://github.com/router-gao/ai-demos/assets/144886373/2d7870e3-1bae-4f18-bab0-b839904b8d32)
 
 
+![image-2023-6-9_10-1-44](https://github.com/router-gao/ai-demos/assets/144886373/124c65b6-04ab-47b3-9e7f-75e8faa9ba36)
+
+
+![image-2023-6-9_10-2-6](https://github.com/router-gao/ai-demos/assets/144886373/4253c805-fd5e-4522-8184-e312336e277c)
+
+
+![image-2023-6-9_10-2-49](https://github.com/router-gao/ai-demos/assets/144886373/90db304c-8479-41da-8650-322f0b77819d)
 
 ## vmtools does not run
 
@@ -279,16 +289,17 @@ apt-get install -y open-vm-tools-desktop open-vm-tools
 
 ## Check Kubernetes status
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_11-7-8.png)
+![image-2023-6-8_11-7-8](https://github.com/router-gao/ai-demos/assets/144886373/d9560d63-6858-42cd-91df-e06f42a4a214)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_11-7-30.png)
+![image-2023-6-8_11-7-30](https://github.com/router-gao/ai-demos/assets/144886373/f3772d62-a07e-49ed-9943-4706e90f0fb2)
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_11-9-34.png)
+
+![image-2023-6-8_11-9-34](https://github.com/router-gao/ai-demos/assets/144886373/23d650d9-f798-4e90-8e35-282b31146f94)
+
 
 ## Check GPU status
 
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_11-7-53.png)
+![image-2023-6-8_11-7-53](https://github.com/router-gao/ai-demos/assets/144886373/4e8c1592-8be4-43dd-add5-51f4f440200d)
 
 
-
-![img](./02 - GPU Quick Demo on tinykube - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_11-8-26.png)
+![image-2023-6-8_11-8-26](https://github.com/router-gao/ai-demos/assets/144886373/1d2d8aac-ab52-44fa-b1e2-9c76df69b05e)
