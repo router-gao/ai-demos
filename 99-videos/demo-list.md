@@ -46,8 +46,20 @@ https://drive.google.com/file/d/1iTYIfm_bcoANCjn9s5t-V-8VxHM7Suj0/view?usp=drive
 
 ## Demo4 - fine-tuning
 
+demo4-conda-installation-manually.mp4
+https://drive.google.com/file/d/1yRacwqjSq_ehynpI3Q9MkpUc5LggWmtZ/view?usp=drive_link
 
 
+demo4-fine-tuning.mp4
+https://drive.google.com/file/d/1NahHW20bNoKyWgzFQA7tZ3icfjP3q7o8/view?usp=drive_link
+
+
+demo4-fine-tuning-2.mp4
+https://drive.google.com/file/d/1oNxWpIVfh9E8_u2N2vtrCfGBA27DGBkw/view?usp=drive_link
+
+
+demo4-validation.mp4
+https://drive.google.com/file/d/1rmld6ai6tCeJcyM0Rh82MBTkZmQCkZ39/view?usp=drive_link
 
 
 ## Demo5 - colab-fine-tuning
