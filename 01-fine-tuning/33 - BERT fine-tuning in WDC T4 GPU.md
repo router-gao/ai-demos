@@ -1,9 +1,10 @@
 
-The demo is made as a fine-tuning foundation.
+**The demo is made as a fine-tuning foundation.**
 
-To make the demo running fast and consume less resource, the find-tuning args and process are simplified purposely.
+**To make the demo running fast and consume less resource, the find-tuning args and process are simplified purposely.**
 
-Environment
+## Environment
+
 Ubuntu 22.04 LTS desktop
 
 16 vGPU and 32G RAM, 500G thin hard disk.
@@ -18,9 +19,10 @@ https://huggingface.co/datasets/glue/viewer/cola/test_matched
 
 Step by step configuration videos is here.
 
-demo4-fine-tuning
+https://drive.google.com/file/d/1NahHW20bNoKyWgzFQA7tZ3icfjP3q7o8/view?usp=sharing
 
-Introduction of BERT
+## Introduction of BERT
+
 https://github.com/google-research/bert
 
 There are 2 fine-tuning process in this articles. And use the same validation script to test both tuned model to demo the difference between 'cased' model and 'uncased' model.
@@ -29,7 +31,7 @@ The fine-tuning process is simplified, and both model 'bert-base-cased' and 'ber
 
 Fine-tuning script for bert-base-cased.
 
-bert-base-cased
+```python
 from transformers import BertForSequenceClassification, BertTokenizerFast, Trainer, TrainingArguments
 from datasets import load_dataset
  
@@ -70,18 +72,15 @@ print(result)
  
 # 6. Save model
 trainer.save_model("./fine_tuned_bert_cased")
+```
 
-
-Fine-tuning script for bert-base-uncased.
-
-bert-base-uncased
-
-
-
+ 
 
 The validation script is as below. There are 5 senteces, and some words are start with capital letter to confuse the model.
 
-validation
+**validation**
+
+```shell
 from transformers import BertForSequenceClassification, BertTokenizerFast
  
 # Load tokenizers and models
@@ -118,20 +117,25 @@ predictions_uncased = [get_prediction_uncased(sentence) for sentence in test_sen
 print("Sentences:", test_sentences)
 print("Cased Model Predictions:", predictions_cased)
 print("Uncased Model Predictions:", predictions_uncased)
+```
+
 
 
 From the output of both tuned models, 'cased' model can read the letters with Capital letter.
 
-validation output
+**validation output**
+
+```shell
 (textgen) ubuntu@ubuntu-vm:~/Downloads$ python test-cases.py
 Sentences: ['The Row in the theater was near the lake where they row their boat.', 'I will Object to the placement of that strange object in the room.', 'He loves Apple products.', 'Let Read read the book with a red cover next week.', 'I will Present my ideas during the present meeting.']
 Cased Model Predictions: ['Incorrect', 'Incorrect', 'Correct', 'Incorrect', 'Incorrect']
 Uncased Model Predictions: ['Correct', 'Correct', 'Correct', 'Incorrect', 'Correct']
 (textgen) ubuntu@ubuntu-vm:~/Downloads$
+```
 
 
-Conclusion
+
+# Conclusion
+
 Select the right model for the right task.
-
-
 
