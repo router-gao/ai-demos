@@ -96,6 +96,8 @@ Use command below to monitor dashboard is up and running
 $ watch kubectl get pod -n kubernetes-dashboard
 ```
 
+![image-2023-10-8_20-11-28](https://github.com/router-gao/ai-demos/assets/144886373/e63124b6-deb8-468d-8306-3c04bd87d23b)
+
 
 
 Config kubectl proxy as below. The original port 35443 is mapped to 8001
@@ -104,12 +106,14 @@ Config kubectl proxy as below. The original port 35443 is mapped to 8001
 $ kubectl proxy --address='0.0.0.0' --disable-filter=true
 ```
 
+![image-2023-10-8_20-7-13](https://github.com/router-gao/ai-demos/assets/144886373/6632d934-16a7-4926-a420-1a944b4a3466)
 
 
 Login from web browser from URL **http://<vm-ip>:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/**
 
 
 
+![image-2023-10-8_20-6-13](https://github.com/router-gao/ai-demos/assets/144886373/18a1bf57-97a6-4172-a141-944f403d3795)
 
 
 
@@ -136,6 +140,8 @@ kubectl port-forward --address 0.0.0.0 svc/istio-ingressgateway -n istio-system 
 
 
 
+![image-2023-10-8_20-13-50](https://github.com/router-gao/ai-demos/assets/144886373/df2d4a03-02cf-43d0-b282-38dc01b20d4f)
+![image-2023-10-8_20-14-20](https://github.com/router-gao/ai-demos/assets/144886373/5fbafb18-ff33-49f9-a6f5-96cbbf448acb)
 
 
 
