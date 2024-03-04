@@ -2,24 +2,26 @@ Manually installation can make a better understanding of fine-tuning components 
 
 Please follow the guide here. https://github.com/oobabooga/text-generation-webui
 
-There are one-click automation installation guide for text-generation-webui. To save time of environment, automation installation is the choice.
+There are one-click automation installation guide for text-generation-webui. 
 
-02 - text-generation-webui
-
-
-
-Resource of the VM
-OS = Ubuntu 22.04 desktop LTS
-
-vCPU = 32
-
-RAM = 64G
-
-Harddisk = 500G (thin provision)
+To save time of environment, automation installation is the choice.
 
 
 
-bash script
+## Resource of the VM
+
+- OS = Ubuntu 22.04 desktop LTS
+
+- vCPU = 32
+
+- RAM = 64G
+
+- Harddisk = 500G (thin provision)
+
+
+
+
+```shell
 #!/bin/bash
 cd ~
 curl -sL "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" > "miniconda3.sh"
@@ -50,6 +52,9 @@ echo "
 # python server.py --share
  
 "
+```
+
+ 
 
 
 
