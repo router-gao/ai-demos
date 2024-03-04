@@ -84,7 +84,7 @@ The validation script is as below. There are 5 senteces, and some words are star
 
 **validation**
 
-```shell
+```python
 from transformers import BertForSequenceClassification, BertTokenizerFast
  
 # Load tokenizers and models
