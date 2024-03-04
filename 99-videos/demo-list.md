@@ -40,7 +40,29 @@ https://drive.google.com/file/d/1iTYIfm_bcoANCjn9s5t-V-8VxHM7Suj0/view?usp=drive
 
 ## Demo3 - vgpu-llama2
 
+demo3-conda-oob.mp4
 
+https://drive.google.com/open?id=1-4zrNR-F-xgQtp0X7e27WqJJgJT3CLyt&usp=drive_copy
+
+
+demo3-load-model.mp4
+
+https://drive.google.com/open?id=1IuDrZNJMLX8MuNYfLverKf3areGd5gJL&usp=drive_copy
+
+
+demo3-ubuntu-installation.mp4
+
+https://drive.google.com/open?id=11RWyPNMKSJZYp0xdZa-sE_rIrWR89f1i&usp=drive_copy
+
+
+vGPU-license-application.mp4
+
+https://drive.google.com/open?id=11Kqr4OZRx02BZZxKVVTVgUM-leR1xN2X&usp=drive_copy
+
+
+vGPU-ubuntu-driver-installation.mp4
+
+https://drive.google.com/open?id=1PWlWgGWbTjkS-qNlQdqprHGuW_Mn1EWx&usp=drive_copy
 
 
 
