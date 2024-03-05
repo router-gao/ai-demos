@@ -8,6 +8,8 @@ There are a few ways to generate RTSP stream to the App.
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-39-9.png)
 
+
+
 ## Camera is the RTSP source
 
 Use a regular RTSP Camera.
@@ -24,6 +26,8 @@ Settings - Privacy - disable 'Automatic Screen Lock'
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-46-15.png)
 
+
+
 ### install free video editor 'shotcut'
 
 **install shotcut**
@@ -38,9 +42,13 @@ Open a sample video and keeps appending it into 30 - 50 mins long video
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-53-40.png)
 
+
+
 Select H.264 Baseline/Main Profile and export the new video.
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-55-36.png)
+
+
 
 ### install VLC and start the VLC stream server
 
@@ -51,15 +59,57 @@ Other installation method, for example 'apt-get install -y vlc', the VLC may not
 **install VLC**
 
 ```shell
-root``@ubuntu``-t460p:/home/ubuntu#``root``@ubuntu``-t460p:/home/ubuntu# snap install vlc``vlc ``3.0``.``18` `from VideoLAN✓ installed``root``@ubuntu``-t460p:/home/ubuntu#``root``@ubuntu``-t460p:/home/ubuntu# vlc -version``VLC is not supposed to be run as root. Sorry.``If you need to use real-time priorities and/or privileged TCP ports``you can use vlc-wrapper (make sure it is Set-UID root and``cannot be run by non-trusted users first).``root``@ubuntu``-t460p:/home/ubuntu#
+root@ubuntu-t460p:/home/ubuntu#
+root@ubuntu-t460p:/home/ubuntu# snap install vlc
+vlc 3.0.18 from VideoLAN✓ installed
+root@ubuntu-t460p:/home/ubuntu#
+root@ubuntu-t460p:/home/ubuntu# vlc -version
+VLC is not supposed to be run as root. Sorry.
+If you need to use real-time priorities and/or privileged TCP ports
+you can use vlc-wrapper (make sure it is Set-UID root and
+cannot be run by non-trusted users first).
+root@ubuntu-t460p:/home/ubuntu#
 ```
 
 ### Start the first RTSP stream
 
 
 
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36.png) 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36.png) ![img](file:///C:/Users/gaoxin/AppData/Local/Temp/enhtmlclip/Image(27).png)![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-1.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-2.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-3.png)![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-4.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-5.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-6.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-7.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-8.png) 
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-1.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-2.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-3.png)
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-4.png)
+
+
+
+ ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-5.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-6.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-7.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-8.png) 
+
+
 
 ### start more VLC streams (in case more RTSP streams is required, which is optional)
 
@@ -67,7 +117,13 @@ Right click VLC icon and select 'New Window'. Repeat the above step and select a
 
 On another VM, open multi-VLC GUI to check if the all VLC sources are up and running.
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-1-1.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-3-30.png)
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-1-1.png) 
+
+
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-3-30.png)
+
+
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-51-30.png)
 
@@ -183,22 +239,40 @@ The web GUI and VLC client output.
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-58-7.png) 
 
+
+
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-59-18.png)
+
+
 
 Prometheus web GUI
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-1-24.png)
 
+
+
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-1-48.png)
+
+
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-4-1.png)
 
+
+
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-4-43.png)
+
+
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-5-52.png)
 
+
+
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-6-27.png)
 
+
+
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-7-46.png)
+
+
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-8-50.png)
