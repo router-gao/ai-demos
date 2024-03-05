@@ -6,7 +6,6 @@ There are a few ways to generate RTSP stream to the App.
 - regular connected to laptop, and VLC on that laptop converts the video into RTSP stream (or a few RTSM streams)
 - a few video clips on the laptop, and VLC converts those videos into RTSP stream (or a few RTSM streams)
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-39-9.png)
 
 ![image-2023-7-11_16-39-9](https://github.com/router-gao/ai-demos/assets/144886373/9bea3abe-7bd9-419f-a314-0581b5d18299)
 
@@ -25,7 +24,6 @@ Ubuntu 22.04 configuration as below.
 
 Settings - Privacy - disable 'Automatic Screen Lock'
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-46-15.png)
 
 ![image-2023-7-11_16-46-15](https://github.com/router-gao/ai-demos/assets/144886373/c3dcfff7-2175-4cd0-acb8-e058324a7efd)
 
@@ -42,14 +40,12 @@ apt-get install -y shotcut
 
 Open a sample video and keeps appending it into 30 - 50 mins long video
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-53-40.png)
 ![image-2023-7-11_16-53-40](https://github.com/router-gao/ai-demos/assets/144886373/ec2ad43d-a330-4eb7-b4e7-a8da2b6f9f26)
 
 
 
 Select H.264 Baseline/Main Profile and export the new video.
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_16-55-36.png)
 
 ![image-2023-7-11_16-55-36](https://github.com/router-gao/ai-demos/assets/144886373/65ac0d9c-afb5-4929-8966-0d5cafe15107)
 
@@ -79,47 +75,32 @@ root@ubuntu-t460p:/home/ubuntu#
 
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36.png) 
 
 ![image-2023-7-4_23-16-36](https://github.com/router-gao/ai-demos/assets/144886373/adb89cc1-f780-412e-bca6-18b041b1e64b)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-1.png) 
 
 ![image-2023-7-4_23-16-36-1](https://github.com/router-gao/ai-demos/assets/144886373/c2ed937f-b18c-46da-a921-cd57eb168307)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-2.png) 
 
 ![image-2023-7-4_23-16-36-2](https://github.com/router-gao/ai-demos/assets/144886373/b297b241-a58b-49ee-b1b1-e38e906d4211)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-3.png)
-
 ![image-2023-7-4_23-16-36-3](https://github.com/router-gao/ai-demos/assets/144886373/b23e138a-90e5-4647-bd10-45438bab1402)
 
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-4.png)
 
 ![image-2023-7-4_23-16-36-4](https://github.com/router-gao/ai-demos/assets/144886373/8c7ac251-786a-4ac5-86be-50426581d98b)
 
 
- ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-5.png) 
-
 ![image-2023-7-4_23-16-36-5](https://github.com/router-gao/ai-demos/assets/144886373/0d3b5200-e64f-4070-8f19-dc7850890563)
 
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-6.png) 
 
 ![image-2023-7-4_23-16-36-6](https://github.com/router-gao/ai-demos/assets/144886373/4c46e84a-268b-46de-94c5-9f3348f62a44)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-7.png) 
-
 ![image-2023-7-4_23-16-36-7](https://github.com/router-gao/ai-demos/assets/144886373/265dc9d1-3703-4b9b-859d-f6257d995afb)
 
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-16-36-8.png) 
 
 ![image-2023-7-4_23-16-36-8](https://github.com/router-gao/ai-demos/assets/144886373/5deabda1-e70a-422b-b15c-f72a44dad668)
 
@@ -130,17 +111,12 @@ Right click VLC icon and select 'New Window'. Repeat the above step and select a
 
 On another VM, open multi-VLC GUI to check if the all VLC sources are up and running.
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-1-1.png) 
 
 ![image-2023-7-11_17-1-1](https://github.com/router-gao/ai-demos/assets/144886373/18b1917b-879d-42b4-9073-4914dbe1df91)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-3-30.png)
-
 ![image-2023-7-11_17-3-30](https://github.com/router-gao/ai-demos/assets/144886373/7608c587-980c-4604-b2d5-ba334af0e41a)
 
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-51-30.png)
 
 ![image-2023-7-11_23-51-30](https://github.com/router-gao/ai-demos/assets/144886373/3262725c-0716-4037-a408-70c549daa03f)
 
@@ -253,54 +229,39 @@ root@ubuntu-vm:~#
 
 The web GUI and VLC client output.
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-58-7.png) 
 
 ![image-2023-7-11_23-58-7](https://github.com/router-gao/ai-demos/assets/144886373/71e6b9dd-5ac0-4366-88c8-39679fcecabb)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-59-18.png)
 
 ![image-2023-7-11_23-59-18](https://github.com/router-gao/ai-demos/assets/144886373/d81196e2-3151-4460-b539-8de23edba3b3)
 
 
 Prometheus web GUI
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-1-24.png)
 
 ![image-2023-7-12_0-1-24](https://github.com/router-gao/ai-demos/assets/144886373/3573fd68-404d-4df5-a8ce-44c0ed5405dd)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-1-48.png)
 
 ![image-2023-7-12_0-1-48](https://github.com/router-gao/ai-demos/assets/144886373/126b4daf-802a-458a-b054-2e695c369b37)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-4-1.png)
 ![image-2023-7-12_0-4-1](https://github.com/router-gao/ai-demos/assets/144886373/27dab62c-f19f-4c6f-bbe2-741fa02a0acd)
 
-
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-4-43.png)
 
 ![image-2023-7-12_0-4-43](https://github.com/router-gao/ai-demos/assets/144886373/50c33822-283b-46a7-986a-a030028bb4e5)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-5-52.png)
 
 ![image-2023-7-12_0-5-52](https://github.com/router-gao/ai-demos/assets/144886373/0c25bd03-676c-4748-8afd-830a9753cb42)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-6-27.png)
-
 ![image-2023-7-12_0-6-27](https://github.com/router-gao/ai-demos/assets/144886373/68d3c5f7-2e41-4f5f-9f79-457d1fc2bfee)
 
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-7-46.png)
-
 ![image-2023-7-12_0-7-46](https://github.com/router-gao/ai-demos/assets/144886373/76c11544-8443-4296-a608-c62ad5e573bc)
 
-
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_0-8-50.png)
 
 ![image-2023-7-12_0-8-50](https://github.com/router-gao/ai-demos/assets/144886373/8b9602f3-85f8-49e2-b2f8-87bf16641f68)
 
