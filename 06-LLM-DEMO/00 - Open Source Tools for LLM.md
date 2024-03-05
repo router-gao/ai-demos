@@ -14,6 +14,7 @@ It does not support API today (2023-Aug)
 
 https://huggingface.co/
 
+![image-2023-8-14_9-20-0](https://github.com/router-gao/ai-demos/assets/144886373/ced39174-7ee5-452b-ba57-17c27be952d2)
 
 
 ### Conda and Anaconda
@@ -49,6 +50,9 @@ Document, https://github.com/oobabooga/text-generation-webui/tree/main/docs
 Monica is a productivity-focused browser extension available for Google Chrome. Desktop is available as well.
 
 https://chrome.google.com/webstore/search/monica
+
+![image-2023-8-14_9-53-10](https://github.com/router-gao/ai-demos/assets/144886373/f652e47d-4f03-46aa-9ffe-e8f30676a65b)
+
 
 ### ChatPDF and PDF.ai
 
