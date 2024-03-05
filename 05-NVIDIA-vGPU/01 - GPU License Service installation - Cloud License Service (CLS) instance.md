@@ -73,7 +73,7 @@ One more way to check the License and other information is to run the CLI on ESX
 
 active vGPU on Ubuntu
 
-```shell
+```bash
 chmod 744 client_configuration_token_07-22-2023-02-10-21.tok
 mv client_configuration_token_07-22-2023-02-10-21.tok /etc/nvidia/ClientConfigToken/
 service nvidia-gridd restart
