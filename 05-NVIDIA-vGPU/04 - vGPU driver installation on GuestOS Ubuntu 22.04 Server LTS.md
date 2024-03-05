@@ -64,15 +64,32 @@ Reboot VM or restart service 'nvidia-gridd'
 
 The output should looks like as below.
 
- 
+![img](./04 - vGPU driver installation on GuestOS Ubuntu 22.04 Server LTS - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-29_22-37-34.png) 
+![image-2023-8-29_22-37-34](https://github.com/router-gao/ai-demos/assets/144886373/943fbabd-5842-4f5f-8187-35f7af248375)
+
+
+
+![img](./04 - vGPU driver installation on GuestOS Ubuntu 22.04 Server LTS - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-29_22-38-54.png)
+
+![image-2023-8-29_22-38-54](https://github.com/router-gao/ai-demos/assets/144886373/8913b67c-792b-4ebe-b3c0-6e230a9d1e22)
+
 
 After install tinykube and GPU Operator, the output is as below.
 
+![img](./04 - vGPU driver installation on GuestOS Ubuntu 22.04 Server LTS - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-29_23-21-54.png)
+
+![image-2023-8-29_23-21-54](https://github.com/router-gao/ai-demos/assets/144886373/91e869bc-c949-4e37-aeab-2f6b21615d19)
 
 
 After install deepstream App, the output is as below.
 
+![img](./04 - vGPU driver installation on GuestOS Ubuntu 22.04 Server LTS - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-29_23-34-20.png)
+
+![image-2023-8-29_23-34-20](https://github.com/router-gao/ai-demos/assets/144886373/5e60f94c-1e75-4d87-aeea-b8d5b0e90f7c)
 
 
 Migration and traffic analysis demo
+
+![img](./04 - vGPU driver installation on GuestOS Ubuntu 22.04 Server LTS - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-29_23-36-39.png)
+![image-2023-8-29_23-36-39](https://github.com/router-gao/ai-demos/assets/144886373/a65fc669-59a5-4f4b-bd60-8d7a390abe76)
 
