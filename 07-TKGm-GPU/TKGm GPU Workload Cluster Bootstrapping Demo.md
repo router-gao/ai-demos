@@ -178,7 +178,7 @@ ENABLE_AUTOSCALER: false
 
 **multiple node-pool**
 
-```shell
+```yaml
 name: md-1
 replicas: 2
 labels:
