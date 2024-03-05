@@ -43,4 +43,5 @@ SR-IOV enabled for any MIG test in the future.
 Make sure GPU Passthrough is disabled!
 
 In some cases, GPU is configured as 'passthrough enabled'. In that case, GPU drivers can be installed, but 'nvidia-smi' output will show error messages.
+![image-2023-7-31_10-14-27](https://github.com/router-gao/ai-demos/assets/144886373/e8ccb6fa-a7b4-46b1-891b-aa7b1123e507)
 
