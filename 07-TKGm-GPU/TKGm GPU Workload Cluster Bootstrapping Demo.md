@@ -424,7 +424,7 @@ This is not supported from config file on TKG2.4. User could created regular non
 
 **single node pool**
 
-```shell
+```yaml
 apiVersion: cpi.tanzu.vmware.com/v1alpha1
 kind: VSphereCPIConfig
 metadata:
@@ -601,7 +601,7 @@ spec:
 
 **multiple node-pool no GPU**
 
-```shell
+```yaml
 apiVersion: cpi.tanzu.vmware.com/v1alpha1
 kind: VSphereCPIConfig
 metadata:
@@ -831,7 +831,7 @@ ubuntu@ubuntu-bootstapping-142:~$
 
 **GPU single node pool**
 
-```
+```yaml
 apiVersion: run.tanzu.vmware.com/v1alpha3
 kind: ClusterBootstrap
 metadata:
