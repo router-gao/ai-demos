@@ -36,49 +36,64 @@ PCI Device set up
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-11.png) 
 
+![image-2023-8-28_9-10-11](https://github.com/router-gao/ai-demos/assets/144886373/a16c8b14-3bec-4a02-93c9-7dd43d6b4a58)
 
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-32.png)
 
+![image-2023-8-28_9-10-32](https://github.com/router-gao/ai-demos/assets/144886373/71ae367a-cdb9-4704-95ad-e3d31b177b7b)
 
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-58.png)
+![image-2023-8-28_9-10-58](https://github.com/router-gao/ai-demos/assets/144886373/2078e40d-ccf2-4e5a-88e6-9cfa38447181)
+
 
 VM set up
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-11-45.png)
 
+![image-2023-8-28_9-11-45](https://github.com/router-gao/ai-demos/assets/144886373/909b7439-9b57-4edd-978a-8ebcda0daca8)
 
 
 Download drivers from license driver ( https://nvid.nvidia.com/ ), detail process could be found here. ( [01 - GPU License Service installation - Cloud License Service (CLS) instance](https://confluence.eng.vmware.com/display/HTP/01+-+GPU+License+Service+installation+-+Cloud+License+Service+(CLS)+instance) )
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-13-12.png)
+![image-2023-8-28_9-13-12](https://github.com/router-gao/ai-demos/assets/144886373/3813a286-1d0b-4d62-8382-a4624c0a4821)
+
+
 
 Unzip the driver file and get the GuestOS drivers. Install the Windows driver. Reboot the GuestOS to active the license.
 
 
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-13-35.png)
+![image-2023-8-28_9-13-35](https://github.com/router-gao/ai-demos/assets/144886373/f9ab4224-d59d-4b62-8e98-ff2cfb3b15f2)
 
 
 
 Generate client config token and put it into GuestOS directory C:\Program Files\NVIDIA Corporation\vGPU Licensing\ClientConfigToken
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-14-33.png)
+![image-2023-8-28_9-14-33](https://github.com/router-gao/ai-demos/assets/144886373/8f69ca55-f3c7-4e0d-b7a7-1ceb0fb5890b)
 
 
 
  ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-14-49.png)
+![image-2023-8-28_9-14-49](https://github.com/router-gao/ai-demos/assets/144886373/6632393a-1746-4dc0-8f8f-e2f374e0ca28)
 
 
 
  ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-15-14.png)
+ ![image-2023-8-28_9-15-14](https://github.com/router-gao/ai-demos/assets/144886373/f1f69677-22eb-4619-b084-25b08a21d320)
+
 
 login to license portal and check if the license is activated successfully.
 
 
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-16-55.png)
+![image-2023-8-28_9-16-55](https://github.com/router-gao/ai-demos/assets/144886373/eadc4002-fa20-4637-a736-b6c79741707e)
+
 
 Monitor the GPU performance from Task manager
 
@@ -88,6 +103,7 @@ Monitor the GPU performance from Task manager
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-18-15.png)
 
+![image-2023-8-28_9-18-15](https://github.com/router-gao/ai-demos/assets/144886373/68be303a-f769-4421-8b26-d4f5dab04f11)
 
 
 
@@ -95,21 +111,26 @@ Monitor the GPU performance from Task manager
 Install Python 3.10 from Microsoft Store on GuestOS, and check the result.
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-19-24.png)
+![image-2023-8-28_9-19-24](https://github.com/router-gao/ai-demos/assets/144886373/ca15032f-6325-4e04-ba33-a784ddf140f8)
 
 
 
  ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-20-12.png)
+ ![image-2023-8-28_9-20-12](https://github.com/router-gao/ai-demos/assets/144886373/c2bd2f02-07ad-4951-bec4-aee7955439a0)
+
 
 Install Git on GuestOS, the download link is  https://git-scm.com/download/win 
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-21-8.png)
 
+![image-2023-8-28_9-21-8](https://github.com/router-gao/ai-demos/assets/144886373/6e3e062c-360f-4530-99ec-8a7b7be2b981)
 
 
 
 
 Gitclone automatic1111 to GuestOS. (git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git)
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-22-37.png)
+![image-2023-8-28_9-22-37](https://github.com/router-gao/ai-demos/assets/144886373/1eb0370a-c9bf-4bc3-9b94-19f0aa01df26)
 
 
 
@@ -121,6 +142,7 @@ And move the ckpt file to directory C:\Users\admin\stable-diffusion-webui\models
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-24-55.png)
 
+![image-2023-8-28_9-24-55](https://github.com/router-gao/ai-demos/assets/144886373/c15076fd-d032-43e2-aab7-38ae6aa772bb)
 
 
 
@@ -129,6 +151,7 @@ Start automatic1111 (double click the webui-user.bat file in directory C:\Users\
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-25-31.png)
 
+![image-2023-8-28_9-25-31](https://github.com/router-gao/ai-demos/assets/144886373/7ae90dd2-68d0-49ba-803c-23d20a769a1a)
 
 
 
@@ -139,9 +162,12 @@ At last it will show the URL to login the Stable Diffusion GUI [http://127.0.0.1
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-27-29.png)
 
+![image-2023-8-28_9-27-29](https://github.com/router-gao/ai-demos/assets/144886373/890832c6-6d72-4275-b61a-348ce149c5b8)
 
 
  ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-27-46.png)
+ 
+![image-2023-8-28_9-27-46](https://github.com/router-gao/ai-demos/assets/144886373/b6372c74-d94a-4034-90f7-d5a783d05fb5)
 
 Login to http://127.0.01:7860 to test some Prompts
 
@@ -159,4 +185,5 @@ Prompt1:  Cute darth vader style minion, holidays in Paris Eiffel Tower, unreal 
   - Size: 512x512
 
 ![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-25_2-39-1.png)
+![image-2023-8-25_2-39-1](https://github.com/router-gao/ai-demos/assets/144886373/8716d1d5-1b3c-4f6c-bb43-f13b7eac5452)
 
