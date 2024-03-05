@@ -8,20 +8,20 @@ https://z2jh.jupyter.org/en/stable/
 
 JupyterHub Deployment
 
-[jupyterhub-deployment.mp4](https://onevmw.sharepoint.com/:v:/t/TelcoAIPlatform/EScoS8sqo7VBj4B72_ivtskBM9tKzL9D7HqTLzkjs9pLKg?e=IHn1m3)
+[jupyterhub-deployment.mp4](https://drive.google.com/open?id=1hFrguhNfjSDKqQQBxKU0aEsq6qLRhOMk&usp=drive_copy)
 
 JupyterHub UI
 
-[jupyterhub-ui.mp4](https://onevmw.sharepoint.com/:v:/t/TelcoAIPlatform/ETf_StEdoQVKsjkqD4VUQLoBhyxK5VqqjpM2DFna7FK-Bw?e=PAQJn7)
+[jupyterhub-ui.mp4](https://drive.google.com/open?id=1txubJo1vk9PycG-c6TSoQQ7K5T0dMKNO&usp=drive_copy)
 
 # Deploy JupyterHub on TKGm
 
 - create TKGm cluster, and set labels for node pools
 - install GPU driver and GPU Operator
 
-Please the document below.
+Please the document [here](https://github.com/router-gao/ai-demos/blob/main/07-TKGm-GPU/TKGm%20GPU%20Workload%20Cluster%20Bootstrapping%20Demo.md)
 
-[TKGm GPU Workload Cluster Bootstrapping Demo](https://confluence.eng.vmware.com/display/HTP/TKGm+GPU+Workload+Cluster+Bootstrapping+Demo)
+[TKGm GPU Workload Cluster Bootstrapping Demo](https://drive.google.com/open?id=1CxVNynGMMYgz0pig0o2hrbkY0geSSYaf&usp=drive_copy)
 
 - create storageclass
 
@@ -37,11 +37,11 @@ helm install nfs-client-provisioner nfs-subdir-external-provisioner/nfs-subdir-e
 
 After helm deploy NFS client, modify the NFS client storageclass to be the default storageclass. Please refer the video above for details.
 
-- helm deploy metallb
+**helm deploy metallb**
 
 **metallb config**
 
-```shell
+```yaml
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
 metadata:
@@ -58,8 +58,6 @@ spec:
   - 10.242.3.40 - 10.242.3.49
 ```
 
-
-
 **helm deploy metallb**
 
 ```shell
@@ -70,13 +68,11 @@ kubectl apply -f l2ad-ippool.yaml
 
 
 
-- helm deploy JupyterHub
-
-
+**helm deploy JupyterHub**
 
 **jupyterhub-config-gpu-test.yaml**
 
-```shell
+```yaml
 proxy:
   service:
     type: LoadBalancer
@@ -112,11 +108,9 @@ singleuser:
         extra_resource_limits: {}
 ```
 
-
-
 **helm deployment**
 
-```shell
+```yaml
 helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
 helm search repo jupyterhub --versions --max-col-width 0
 helm install jupyterhub jupyterhub/jupyterhub --namespace jhub --create-namespace --version=3.1.0 --values jupyterhub-config-gpu-test.yaml
