@@ -1,32 +1,36 @@
-Process
-VMware Side Configuration
-Install GPU drivers and GPU manager on ESXi (SSH login)
+## Process
 
-PCI device set up
+### VMware Side Configuration
 
-VM (Windows10 or Ubuntu desktop) set up
+- [ ] Install GPU drivers and GPU manager on ESXi (SSH login)
+- [ ] PCI device set up
 
-NVIDIA Software Configuration
-License Server set up
-
-Install vGPU drivers in Guest OS
-
-Download *.tok file and active the vGPU license
-
-Monitor the vGPU Status
-
-App Stable Diffusion Deployment
-Install python 3.10 and Git
-
-Download automatic1111 web GUI
-
-Download Stable Diffusion 1.5/2.0 model
-
-Start automatic1111 and load Stable Diffusion
-
-You can try Stable Diffusion features (txt2img, img2img...)
+- [ ] VM (Windows10 or Ubuntu desktop) set up
 
 
+### NVIDIA Software Configuration
+
+- [ ] License Server set up
+- [ ] Install vGPU drivers in Guest OS
+
+- [ ] Download *.tok file and active the vGPU license
+
+- [ ] Monitor the vGPU Status
+
+
+### App Stable Diffusion Deployment
+
+- [ ] Install python 3.10 and Git
+- [ ] Download automatic1111 web GUI
+
+- [ ] Download Stable Diffusion 1.5/2.0 model
+
+- [ ] Start automatic1111 and load Stable Diffusion
+
+- [ ] You can try Stable Diffusion features (txt2img, img2img...)
+
+
+## Critical Steps Screen Shots
 
 PCI Device  set up
 
@@ -41,8 +45,6 @@ Download drivers from license driver ( https://nvid.nvidia.com/ ), detail proces
 
 
 Unzip the driver file and get the GuestOS drivers. Install the Windows driver. Reboot the GuestOS to active the license.
-
-
 
 
 
@@ -91,10 +93,14 @@ Prompt1:  Cute darth vader style minion, holidays in Paris Eiffel Tower, unreal 
 
 
 
-Prompt2: Cute small cat sitting in a movie theater eating chicken wiggs watching a movie ,unreal engine, cozy indoor lighting, artstation, detailed, digital painting,cinematic,character design by mark ryden and pixar and hayao miyazaki, unreal 5, daz, hyperrealistic, octane render
-Negative prompt: ugly, ugly arms, ugly hands,
-Parameters: Steps: 25, Sampler: Euler a, CFG scale: 8.0, Seed: 3099373267, Size: 512x512
-
+- Prompt2: Cute small cat sitting in a movie theater eating chicken wiggs watching a movie ,unreal engine, cozy indoor lighting, artstation, detailed, digital painting,cinematic,character design by mark ryden and pixar and hayao miyazaki, unreal 5, daz, hyperrealistic, octane render
+- Negative prompt: ugly, ugly arms, ugly hands,
+- Parameters: 
+  - Steps: 25, 
+  - Sampler: Euler a, 
+  - CFG scale: 8.0, 
+  - Seed: 3099373267, 
+  - Size: 512x512
 
 
 
