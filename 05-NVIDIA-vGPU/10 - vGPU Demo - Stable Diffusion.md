@@ -34,22 +34,19 @@
 
 **PCI Device set up**
 
-![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-11.png) 
+ 
 
 ![image-2023-8-28_9-10-11](https://github.com/router-gao/ai-demos/assets/144886373/a16c8b14-3bec-4a02-93c9-7dd43d6b4a58)
 
 
-![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-32.png)
+
 
 ![image-2023-8-28_9-10-32](https://github.com/router-gao/ai-demos/assets/144886373/71ae367a-cdb9-4704-95ad-e3d31b177b7b)
 
 
-![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-10-58.png)
 ![image-2023-8-28_9-10-58](https://github.com/router-gao/ai-demos/assets/144886373/2078e40d-ccf2-4e5a-88e6-9cfa38447181)
 
 **VM set up**
-
-![img](./10 - vGPU Demo - Stable Diffusion - HoTT Team - Public - VMware Core Confluence_files/image-2023-8-28_9-11-45.png)
 
 ![image-2023-8-28_9-11-45](https://github.com/router-gao/ai-demos/assets/144886373/909b7439-9b57-4edd-978a-8ebcda0daca8)
 
