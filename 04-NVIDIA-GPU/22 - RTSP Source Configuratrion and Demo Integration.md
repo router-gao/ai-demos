@@ -69,7 +69,9 @@ On another VM, open multi-VLC GUI to check if the all VLC sources are up and run
 
 ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-1-1.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_17-3-30.png)
 
-# ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-51-30.png)
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-51-30.png)
+
+
 
 # RTSP Demo
 
@@ -80,15 +82,65 @@ https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/video-analytics-demo
 **fetch helm chart to local**
 
 ```shell
-root``@ubuntu``-vm:~# helm fetch https:``//helm.ngc.nvidia.com/nvidia/charts/video-analytics-demo-0.1.8.tgz --untar``root``@ubuntu``-vm:~#``root``@ubuntu``-vm:~# ll``total ``142516``drwx------ ``10` `root  root    ``4096` `Jul ``10` `15``:``54` `./``drwxr-xr-x ``19` `root  root    ``4096` `Jun ``26` `03``:``42` `../``...``-rw-r--r-- ``1` `root  root    ``341` `Jun ``29` `07``:``19` `ubuntu-``22.04``.yaml``drwxr-xr-x ``4` `root  root    ``4096` `Jul ``10` `15``:``54` `video-analytics-demo/``drwxr-xr-x ``2` `root  root    ``4096` `Jul ``10` `15``:``54` `video-analytics-demo-``0.1``.``8``.tgz/``-rw------- ``1` `root  root   ``13622` `Jul ``5` `08``:``42` `.viminfo``-rw-r--r-- ``1` `root  root    ``215` `Jul ``2` `16``:``22` `.wget-hsts``root``@ubuntu``-vm:~#``root``@ubuntu``-vm:~#``root``@ubuntu``-vm:~# cd video-analytics-demo``root``@ubuntu``-vm:~/video-analytics-demo#``root``@ubuntu``-vm:~/video-analytics-demo# vim values.yaml``root``@ubuntu``-vm:~/video-analytics-demo#
+root@ubuntu-vm:~# helm fetch https://helm.ngc.nvidia.com/nvidia/charts/video-analytics-demo-0.1.8.tgz --untar
+root@ubuntu-vm:~#
+root@ubuntu-vm:~# ll
+total 142516
+drwx------ 10 root   root       4096 Jul 10 15:54 ./
+drwxr-xr-x 19 root   root       4096 Jun 26 03:42 ../
+...
+-rw-r--r--  1 root   root        341 Jun 29 07:19 ubuntu-22.04.yaml
+drwxr-xr-x  4 root   root       4096 Jul 10 15:54 video-analytics-demo/
+drwxr-xr-x  2 root   root       4096 Jul 10 15:54 video-analytics-demo-0.1.8.tgz/
+-rw-------  1 root   root      13622 Jul  5 08:42 .viminfo
+-rw-r--r--  1 root   root        215 Jul  2 16:22 .wget-hsts
+root@ubuntu-vm:~#
+root@ubuntu-vm:~#
+root@ubuntu-vm:~# cd video-analytics-demo
+root@ubuntu-vm:~/video-analytics-demo#
+root@ubuntu-vm:~/video-analytics-demo# vim values.yaml
+root@ubuntu-vm:~/video-analytics-demo#
 ```
+
+
 
 Edit rtsp sources as below. And add 'rtspnodePort: 31113' to service section for VLC client monitoring.
 
 **edit values.yaml**
 
 ```shell
-root``@ubuntu``-vm:~# cat video-analytics-demo/values.yaml | grep camera -C ``20``...``service:`` ``type: NodePort`` ``port: ``80`` ``rtspnodePort: ``31113`` ``webuiPort: ``5080`` ``webuinodePort: ``31115` `#specify camera IP as rtsp:``//username:password@ip``#or rtsp:``//ip if it has no username and password` `cameras:`` ``camera1: rtsp:``//10.0.72.106:8553/`` ``camera2: rtsp:``//10.0.72.106:8552/`` ``camera3: rtsp:``//10.0.72.106:8553/`` ``camera4: rtsp:``//10.0.72.106:8552/`` ``camera5: rtsp:``//10.0.72.106:8553/`` ``camera6: rtsp:``//10.0.72.106:8552/`` ``camera7: rtsp:``//10.0.72.106:8553/`` ``camera8: rtsp:``//10.0.72.106:8552/`` ``camera9: rtsp:``//10.0.72.106:8553/`` ``camera10: rtsp:``//10.0.72.106:8552/`` ``camera11: rtsp:``//10.0.72.106:8553/`` ``camera12: rtsp:``//10.0.72.106:8552/`` ``camera13: rtsp:``//10.0.72.106:8553/`` ``camera14: rtsp:``//10.0.72.106:8552/`` ``camera15: rtsp:``//10.0.72.106:8553/`` ``camera16: rtsp:``//10.0.72.106:8552/` `...``root``@ubuntu``-vm:~#
+root@ubuntu-vm:~# cat video-analytics-demo/values.yaml | grep camera -C 20
+...
+service:
+  type: NodePort
+  port: 80
+  rtspnodePort: 31113
+  webuiPort: 5080
+  webuinodePort: 31115
+ 
+#specify camera IP as rtsp://username:password@ip
+#or rtsp://ip if it has no username and password
+ 
+cameras:
+  camera1: rtsp://10.0.72.106:8553/
+  camera2: rtsp://10.0.72.106:8552/
+  camera3: rtsp://10.0.72.106:8553/
+  camera4: rtsp://10.0.72.106:8552/
+  camera5: rtsp://10.0.72.106:8553/
+  camera6: rtsp://10.0.72.106:8552/
+  camera7: rtsp://10.0.72.106:8553/
+  camera8: rtsp://10.0.72.106:8552/
+  camera9: rtsp://10.0.72.106:8553/
+  camera10: rtsp://10.0.72.106:8552/
+  camera11: rtsp://10.0.72.106:8553/
+  camera12: rtsp://10.0.72.106:8552/
+  camera13: rtsp://10.0.72.106:8553/
+  camera14: rtsp://10.0.72.106:8552/
+  camera15: rtsp://10.0.72.106:8553/
+  camera16: rtsp://10.0.72.106:8552/
+ 
+...
+root@ubuntu-vm:~#
 ```
 
 Deploy helm chart, and get the rtsp info and web monitor info.
@@ -96,12 +148,42 @@ Deploy helm chart, and get the rtsp info and web monitor info.
 **deploy helm chart**
 
 ```shell
-root``@ubuntu``-vm:~# helm install iva --values video-analytics-demo/values.yaml video-analytics-demo``NAME: iva``LAST DEPLOYED: Tue Jul ``11` `15``:``54``:``19` `2023``NAMESPACE: ``default``STATUS: deployed``REVISION: ``1``NOTES:``1``. Get the RTSP URL by running these commands:`` ``export NODE_PORT=$(kubectl get --namespace ``default` `-o jsonpath=``"{.spec.ports[0].nodePort}"` `services iva-video-analytics-demo)`` ``export NODE_IP=$(kubectl get nodes --namespace ``default` `-o jsonpath=``"{.items[0].status.addresses[0].address}"``)`` ``echo rtsp:``//$NODE_IP:$NODE_PORT/ds-test` `2``.Get the WebUI URL by running these commands:`` ``export ANT_NODE_PORT=$(kubectl get --namespace ``default` `-o jsonpath=``"{.spec.ports[0].nodePort}"` `services iva-video-analytics-demo-webui)`` ``export NODE_IP=$(kubectl get nodes --namespace ``default` `-o jsonpath=``"{.items[0].status.addresses[0].address}"``)`` ``echo http:``//$NODE_IP:$ANT_NODE_PORT`` ``Disclaimer:`` ``Note: Due to the output from DeepStream being real-time via RTSP, you may experience occasional hiccups in the video stream depending on network conditions.``root``@ubuntu``-vm:~#``root``@ubuntu``-vm:~#  export NODE_PORT=$(kubectl get --namespace ``default` `-o jsonpath=``"{.spec.ports[0].nodePort}"` `services iva-video-analytics-demo)`` ``export NODE_IP=$(kubectl get nodes --namespace ``default` `-o jsonpath=``"{.items[0].status.addresses[0].address}"``)`` ``echo rtsp:``//$NODE_IP:$NODE_PORT/ds-test``rtsp:``//10.0.72.102:31113/ds-test``root``@ubuntu``-vm:~#``root``@ubuntu``-vm:~#  export ANT_NODE_PORT=$(kubectl get --namespace ``default` `-o jsonpath=``"{.spec.ports[0].nodePort}"` `services iva-video-analytics-demo-webui)`` ``export NODE_IP=$(kubectl get nodes --namespace ``default` `-o jsonpath=``"{.items[0].status.addresses[0].address}"``)`` ``echo http:``//$NODE_IP:$ANT_NODE_PORT``http:``//10.0.72.102:31115``root``@ubuntu``-vm:~#
+root@ubuntu-vm:~# helm install iva --values video-analytics-demo/values.yaml video-analytics-demo
+NAME: iva
+LAST DEPLOYED: Tue Jul 11 15:54:19 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+NOTES:
+1. Get the RTSP URL by running these commands:
+  export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services iva-video-analytics-demo)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo rtsp://$NODE_IP:$NODE_PORT/ds-test
+ 
+2.Get the WebUI URL by running these commands:
+  export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services iva-video-analytics-demo-webui)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo http://$NODE_IP:$ANT_NODE_PORT
+  Disclaimer:
+  Note: Due to the output from DeepStream being real-time via RTSP, you may experience occasional hiccups in the video stream depending on network conditions.
+root@ubuntu-vm:~#
+root@ubuntu-vm:~#   export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services iva-video-analytics-demo)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo rtsp://$NODE_IP:$NODE_PORT/ds-test
+rtsp://10.0.72.102:31113/ds-test
+root@ubuntu-vm:~#
+root@ubuntu-vm:~#   export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services iva-video-analytics-demo-webui)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo http://$NODE_IP:$ANT_NODE_PORT
+http://10.0.72.102:31115
+root@ubuntu-vm:~#
 ```
 
 The web GUI and VLC client output.
 
-![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-58-7.png) ![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-59-18.png)
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-58-7.png) 
+
+![img](./22 - RTSP Source Configuratrion and Demo Integration - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-11_23-59-18.png)
 
 Prometheus web GUI
 

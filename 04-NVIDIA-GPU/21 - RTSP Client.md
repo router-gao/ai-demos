@@ -2,9 +2,19 @@
 
 ![img](./21 - RTSP Client - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-11-47.png)
 
+
+
 ## VLC work as RTSP monitoring client
 
- ![img](./21 - RTSP Client - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-12-13.png)![img](./21 - RTSP Client - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-12-29.png)
+ ![img](./21 - RTSP Client - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-12-13.png)
+
+
+
+![img](./21 - RTSP Client - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-4_23-12-29.png)
+
+
+
+
 
 ## RTSP username & password handling
 
