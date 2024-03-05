@@ -2,7 +2,10 @@
 
 Ubuntu 22.04, NVIDIA Tesla T4 GPU, DirectPath IO to Ubuntu VM.
 
-![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_17-14-30.png)
+
+
+![image-2023-6-19_17-14-30](https://github.com/router-gao/ai-demos/assets/144886373/382886b0-d354-4348-ae9c-e01c0873f3f3)
+
 
 **lspci output**
 
@@ -96,6 +99,10 @@ Edit the service ’kube-prometheus-stack-grafana‘ service type from 'ClusterI
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_19-13-44.png)
 
+![image-2023-6-19_19-13-44](https://github.com/router-gao/ai-demos/assets/144886373/b6ce5221-6a1f-4eda-a6b9-9e15896818df)
+
+
+
 Check the output and login to Grafana GUI.
 
 **check the output**
@@ -144,7 +151,11 @@ root@ubuntu-vm:/home/ubuntu#
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_17-38-1.png)
 
+![image-2023-6-19_17-38-1](https://github.com/router-gao/ai-demos/assets/144886373/fafa70ea-cfc5-4245-b828-61b448e1d757)
+
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_17-40-18.png)
+
+![image-2023-6-19_17-40-18](https://github.com/router-gao/ai-demos/assets/144886373/47eefce2-99a1-448a-8c9c-3e0681281507)
 
 
 
@@ -217,9 +228,15 @@ Edit the Nvidia exporter service type from 'ClusterIP' to 'NodePort'
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_20-42-3.png)
 
+![image-2023-6-19_20-42-3](https://github.com/router-gao/ai-demos/assets/144886373/342a1fce-1a13-48c8-b72b-32bf999f23d6)
+
+
 The expected result is as below, IP 10.252.80.20 is the Ubuntu OS mgmt IP.
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_20-43-49.png)
+
+![image-2023-6-19_20-43-49](https://github.com/router-gao/ai-demos/assets/144886373/f8e41355-3467-49c6-9340-bf05fc5c95bd)
+
 
 ## Modify Prometheus user defined values.yaml file
 
@@ -231,11 +248,18 @@ https://raw.githubusercontent.com/prometheus-community/helm-charts/main/charts/k
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_20-55-25.png)
 
+![image-2023-6-19_20-55-25](https://github.com/router-gao/ai-demos/assets/144886373/8545789b-d58d-49cb-a4dc-a029b6fe6829)
+
+
 Search for 'additionalScrapeConfigs: []' between line 3200 - 3300, and add the Nvidia Exporter information.
 
 Below is the default values.yaml file
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_20-25-6.png)
+
+![image-2023-6-19_20-25-6](https://github.com/router-gao/ai-demos/assets/144886373/7dd15a66-1240-4fce-83b9-a61ec00b9f11)
+
+
 
 Modify it as below, which IP and port is already validated before by command 'curl http://<IP>:<port>/metrics'
 
@@ -243,6 +267,10 @@ Modify it as below, which IP and port is already validated before by command 'cu
 - target port is the Nvidia exporter port
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_20-28-35.png)
+
+![image-2023-6-19_20-28-35](https://github.com/router-gao/ai-demos/assets/144886373/e934f1f6-8598-45fb-8040-5a1ffc1d872b)
+
+
 
 ## Upgrade the helm deployment by the command as below
 
@@ -255,6 +283,9 @@ helm upgrade kube-prometheus-stack prometheus-community/kube-prometheus-stack -n
 Edit the Grafana service type from 'ClusterIP' to 'NodePort' as below
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-5-24.png)
+
+![image-2023-6-19_21-5-24](https://github.com/router-gao/ai-demos/assets/144886373/b977eec5-d24f-4233-8dbf-a25d3b18b70e)
+
 
 ## Check the results
 
@@ -289,21 +320,41 @@ Login to Grafana Web GUI - Dashboards
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-30-17.png)
 
+![image-2023-6-19_21-30-17](https://github.com/router-gao/ai-demos/assets/144886373/5339241f-3162-44d0-b3fa-4291d607cf23)
+
+
 New - 'new folder' with the name 12239-offcial (or other names)
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-32-21.png)
+
+![image-2023-6-19_21-32-21](https://github.com/router-gao/ai-demos/assets/144886373/1971eacd-b417-486d-befa-404be9969006)
+
 
 New - 'Import'
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-33-29.png)
 
+![image-2023-6-19_21-33-29](https://github.com/router-gao/ai-demos/assets/144886373/ada86d70-413c-40ef-8db9-5f2819a02a86)
+
+
 Input the ID '12239'. This is Nvidia official Dashboard template ID. Select the Data Source 'Prometheus', which is the default one.
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-39-25.png)
 
+![image-2023-6-19_21-39-25](https://github.com/router-gao/ai-demos/assets/144886373/7475ddbf-579a-4760-8f64-227dcca24169)
+
+
 Check the Dashboard
 
-![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-43-41.png)![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-41-22.png)
+![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-43-41.png)
+
+![image-2023-6-19_21-43-41](https://github.com/router-gao/ai-demos/assets/144886373/1ccc8714-553f-4788-8fd5-644aec053b78)
+
+
+![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-41-22.png)
+![image-2023-6-19_21-41-22](https://github.com/router-gao/ai-demos/assets/144886373/1ba23080-8dce-4d13-9bab-c5ce238e456d)
+
+
 
 # ********** the integration is done **********
 
@@ -315,17 +366,27 @@ Go to website https://grafana.com/ and search the templates.
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-47-53.png) 
 
+![image-2023-6-19_21-47-53](https://github.com/router-gao/ai-demos/assets/144886373/248c6e3c-8857-4ccb-a9fe-ffe7f3700cbd)
+
+
 To import the template into Grafana, either input 'ID' or upload the 'JSON' file. NVDIA DCGM 12239 is the official Dashboard for Prometheus/Grafana.
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-52-0.png)
+
+![image-2023-6-19_21-52-0](https://github.com/router-gao/ai-demos/assets/144886373/a0c2928e-9706-4282-95f2-f26168bad2b8)
+
 
 ## Delete Dashboard
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-35-40.png)
 
+![image-2023-6-19_21-35-40](https://github.com/router-gao/ai-demos/assets/144886373/2d1ad5fe-965a-4e01-8f24-dccafb32bd2e)
 
 
 ![img](./04 - NVIDIA monitoring in Prometheus_Grafana - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-19_21-36-29.png)
+
+![image-2023-6-19_21-36-29](https://github.com/router-gao/ai-demos/assets/144886373/99f0d7a6-b757-4662-bd41-3114b7898408)
+
 
 # Remove all 3 Helm Charts (clean up script)
 
