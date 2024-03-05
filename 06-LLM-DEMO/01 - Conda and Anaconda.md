@@ -73,6 +73,8 @@ $ ~/anaconda3/bin/anaconda-navigator
 ### installation on Windows 10
 
 Download the *.exe file and install it, you will get it.
+
+
 ![image-2023-8-14_17-1-0](https://github.com/router-gao/ai-demos/assets/144886373/759fcd76-eb3b-42b1-a7c8-298550764248)
 
 
