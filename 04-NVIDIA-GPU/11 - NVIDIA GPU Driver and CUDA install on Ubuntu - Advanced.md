@@ -28,11 +28,17 @@ https://docs.nvidia.com/cuda/archive/11.7.1/cuda-toolkit-release-notes/index.htm
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_15-26-45.png)
 
+![image-2023-6-27_15-26-45](https://github.com/router-gao/ai-demos/assets/144886373/6cbc1d72-3c50-4a2d-9129-36b158714107)
+
+
 # Check the GPU driver version and CUDA version after installation
 
 Use command 'nvidia-smi'
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_15-54-15.png)
+
+![image-2023-6-27_15-54-15](https://github.com/router-gao/ai-demos/assets/144886373/c8a17399-f8e3-4b15-b785-d56baa73cd2a)
+
 
 # Installation Process
 
@@ -54,13 +60,31 @@ Select Software & Updates - Additional Drivers - Select proper drivers. Most of 
 
 Click 'Apply Changes', and system rebooting is required after driver is successfully installed.
 
-![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-17-50.png) ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-19-24.png) 
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-17-50.png) 
+![image-2023-6-8_10-17-50](https://github.com/router-gao/ai-demos/assets/144886373/0726eb48-df65-4253-aa71-2fbc83fed2e8)
 
+
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-8_10-19-24.png) 
+
+![image-2023-6-8_10-19-24](https://github.com/router-gao/ai-demos/assets/144886373/20cc44b8-a4b2-4671-8ffe-8566fb45cd0e)
 
 
 After rebooting, check the status by command 'nvidia-smi', and Nvidia App will be installed automatically.
 
-![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_20-16-31.png)![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-53-28.png) ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-54-10.png)
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_20-16-31.png)
+
+![image-2023-6-6_20-16-31](https://github.com/router-gao/ai-demos/assets/144886373/a2c8f065-5bfa-4bc6-a5c5-8fd2f31167c9)
+
+
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-53-28.png) 
+
+![image-2023-6-6_17-53-28](https://github.com/router-gao/ai-demos/assets/144886373/cc8c0e7d-c72f-411f-b5f2-b477e5d64af1)
+
+
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-6_17-54-10.png)
+
+![image-2023-6-6_17-54-10](https://github.com/router-gao/ai-demos/assets/144886373/dd795b3d-f687-4ea8-94d0-be0e8b07566c)
+
 
 ## Option - 2, install GPU driver from Ubuntu CLI
 
@@ -180,7 +204,14 @@ root@ubuntu-2004-server:/home/ubuntu#
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_18-32-29.png)
 
+![image-2023-7-12_18-32-29](https://github.com/router-gao/ai-demos/assets/144886373/8474d2bb-e7ac-4d10-b36b-2770b7bd1dde)
+
+
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-7-12_18-32-55.png)
+
+![image-2023-7-12_18-32-55](https://github.com/router-gao/ai-demos/assets/144886373/78271983-7fce-49e1-83fd-b86080c0f200)
+
+
 
 The CUDA tool kit document includes installation guide. There are 2 steps.
 
@@ -210,6 +241,9 @@ Step 2, download and run the installer sudo sh cuda_<version>_linux.run, example
 https://developer.nvidia.com/cuda-downloads
 
 ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-18-28.png)
+![image-2023-6-27_16-18-28](https://github.com/router-gao/ai-demos/assets/144886373/7d6962c4-9189-4ad0-8616-b5a0b7310ca2)
+
+
 
 **run the CUDA installer**
 
@@ -218,7 +252,15 @@ wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/
 sudo sh cuda_12.1.1_530.30.02_linux.run -m=kernel-open
 ```
 
-![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-8.png) ![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-45.png)
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-8.png) 
+![image-2023-6-27_16-27-8](https://github.com/router-gao/ai-demos/assets/144886373/ce439664-0562-494c-8b30-d3d0ba1c929a)
+
+
+
+![img](./11 - NVIDIA GPU Driver and CUDA install on Ubuntu (Advanced) - HoTT Team - Public - VMware Core Confluence_files/image-2023-6-27_16-27-45.png)
+![image-2023-6-27_16-27-45](https://github.com/router-gao/ai-demos/assets/144886373/7d9505ac-7ac7-43d2-ac6a-caf4d1af88bf)
+
+
 
 monitor the logs
 
