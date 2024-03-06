@@ -1,9 +1,9 @@
-select the right model
+### Select the right model
 
-OOM
+### OOM (out of memory)
 
-running out of space
+### Running out of space
 
-Github VS Huggingface
+### Github VS Huggingface
 
-Colab VS local deployment
+### Colab VS local deployment
