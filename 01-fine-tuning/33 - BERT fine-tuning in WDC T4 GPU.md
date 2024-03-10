@@ -33,6 +33,9 @@ The fine-tuning process is simplified, and both model 'bert-base-cased' and 'ber
 Fine-tuning script for bert-base-cased.
 
 ```python
+!pip install datasets
+!pip install transformers
+
 from transformers import BertForSequenceClassification, BertTokenizerFast, Trainer, TrainingArguments
 from datasets import load_dataset
  
