@@ -30,11 +30,14 @@ There are 2 fine-tuning process in this articles. And use the same validation sc
 
 The fine-tuning process is simplified, and both model 'bert-base-cased' and 'bert-base-uncased' are using the same training_args and same Dataset.
 
-Fine-tuning script for bert-base-cased.
-
+Fine-tuning script for bert-base-cased. On Colab, install those packages before running the fine-tuning script.
 ```python
 !pip install datasets
-!pip install transformers
+!pip install transformers[torch]
+!pip install accelerate>=0.21.0
+```
+
+```python
 
 from transformers import BertForSequenceClassification, BertTokenizerFast, Trainer, TrainingArguments
 from datasets import load_dataset
