@@ -38,7 +38,9 @@ secure by AI (log analysis, etc)
 
 ## monitoring 
 
-fine-tuning monitoring
+### fine-tuning monitoring
+
+CUDA, GPU, CPU, Networking 
 
 fine-tuned models
 
