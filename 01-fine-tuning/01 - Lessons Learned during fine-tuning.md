@@ -80,3 +80,4 @@ upgrading
 ### Colab VS local deployment
 
 ### Power Supply and Cooling
+### hardware management and provisioning
