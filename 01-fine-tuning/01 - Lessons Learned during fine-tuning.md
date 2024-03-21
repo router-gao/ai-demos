@@ -78,3 +78,5 @@ upgrading
 ### Github VS Huggingface
 
 ### Colab VS local deployment
+
+### Power Supply and Cooling
